@@ -14,6 +14,14 @@ after that, in the reciever side.
 we running the code that contain the 2nd mapping (200: 73, 201: 81, ...), so our data can be decoded based on the pixel that we use 
 
 
+Note.
+Kode OFDM = OFDm_Rx+Mapping-1019.py, menggunakan x1, y1, width, height = 900, 200, 10, 648  # Monitored area == 648 pixel, untuk jarak dekat
+- kemudian untuk OFDM, data yang dikirim adalah 200 bit, 92+8+92+8 => 92+92 adalah bit asli yang kemudian akan digunakan untuk dikonversi ke ASCII
+
+kode HOOK-OFDM = OFDM-15meter(good Value).py, menggunakan x1, y1, width, height = 980, 500, 12, 1  # Monitored area  == 1 pixel, untuk jarak jauh
+- Kemudian untuk HOOK-OFDM, data yang dikirim adalah 200 bit, 192+9 => 8 bit akan dihapus dan 192 bit adalah bit asli yang akan dikonversi ke ASCII
+
+
 
 
   
